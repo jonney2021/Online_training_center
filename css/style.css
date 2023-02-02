@@ -1,0 +1,848 @@
+@charset "utf-8";
+
+/* Css document for the project Web Page
+    Developed by: Yeming Hu
+    Script Date: January 28,2023
+*/
+
+/*--- resetting the layout ---*/
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+/*--- Typorgraphy  ---*/
+body {
+  background: #fff;
+  font-family: 'Nunito', sans-serif;
+}
+
+.container{
+  max-width: 1170px;
+}
+
+section{
+  padding: 100px 0;
+} 
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+a,input,button,
+  .form-control {
+    transition: all 0.5s !important;
+  }
+
+p{
+  color: #757575;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: white;
+  font-weight: bold;
+}
+h2 {
+  font-size: 2em;
+  color: #353535;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: #454545;
+  font-weight: bold;
+}
+
+h1 span, h2 span, h3 span {
+  font-size: 65%;
+  font-weight: 400;
+}
+
+.img-responsive {
+  max-width: 550px;
+  height: auto;
+}
+
+
+/*--- Header ---*/
+
+#menu .navbar {
+  padding: 0;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+}
+
+#menu .container ul li a{
+  display: block;
+  height: 80px;
+  line-height: 80px;
+  font-size:18px;
+  padding: 0 30px;
+  color: #353535;
+}
+
+#menu .container ul li a:hover{
+  color: #fff;
+  background-color: #b99a78;
+}
+
+#menu .logo {
+  width: 60px;
+  height: auto;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus
+{
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+
+/*--- Home ---*/
+
+#home {
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+
+#home .tab-pane {
+  position: relative;
+  padding-top: 80px;
+}
+
+#home .content {
+  position: absolute;
+  bottom: 10%;
+  padding: 0 15%;
+  width: 100%;
+  color: #fff;
+}
+
+#home span{
+  color: #fff;
+}
+
+/*--- Feature ---*/
+
+#feature {
+  padding-top: 0;
+}
+
+#feature .feature-box {
+  padding: 0 10px;
+}
+
+#feature button {
+  width: 100%;
+}
+
+#feature .nav-tabs{
+  border-bottom: 0;
+}
+
+#feature h3 {
+  margin: 10px 0;
+}
+
+#feature p {
+  color: #757575;
+  font-size: 14px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+#feature .nav-tabs .nav-link {
+  border-radius: 20px;
+  border: 0;
+  border-bottom: 5px solid #f0f0f0;
+  transition: all 0.3s ease-in-out;
+  
+}
+
+#feature .nav-tabs .nav-link.active,
+#feature .nav-tabs .nav-link:focus, 
+#feature .nav-tabs .nav-link:hover {
+  border-bottom-color:#6c79a4;
+  background: white;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,0.275);
+}
+
+.nav-tabs .nav-link.active h3,
+.nav-tabs .nav-link:focus h3, 
+.nav-tabs .nav-link:hover h3 {
+  color: #6c79a4;
+}
+
+
+/* --- About Section --- */
+#about {
+  background-color: #FAF9F9;
+}
+
+.about-info h2 {
+  margin: 20px 0;
+}
+
+.about-info figure {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 15px;
+}
+
+.about-info figure span {
+  float: left;
+  margin-left: -15px;
+  padding: 15px 20px;
+  position: relative;
+  top: 20px;
+}
+
+.about-info figure span i {
+  background-color: #b99a78;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  
+}
+
+figcaption h3{ 
+  margin-top: 20px;
+} 
+
+#about .entry-form {
+  max-width: 450px;
+  max-height: 450px;
+  background-color: #b99a78;
+  border-radius: 60px;
+  text-align: center;
+  padding: 6em;
+  box-shadow: 0 0 10px rgba(0,0,0,0.25); 
+}
+
+.entry-form form h2{
+  color: white;
+  padding-bottom: 10px;
+} 
+
+.entry-form .form-control {
+  border: 0;
+  border-bottom: 1px solid;
+  font-size: 14px;
+  height: 45px;
+  margin: 10px 0;
+  outline: none;
+  color: #757575;
+  box-shadow: none;
+}
+
+.entry-form .submit-btn {
+  background: #ffffff;
+  border-radius: 60px;
+  border: 0;
+  color: #011627;
+  width: 60%;
+  height: 40px;
+  margin: 30px auto;
+  cursor: pointer;
+}
+
+.entry-form .submit-btn:hover{
+  background-color: #d7c48d;
+  color: #fff; 
+}
+
+/*--- Teachers Section ---*/
+
+#teachers {
+  padding-top: 105px;
+  background-color: #edf6fb;
+}
+
+.teacher-title {
+  padding:10px 0 30px;
+  text-align: center;
+}
+
+.teacher-title h2 span {
+  display: block;
+  font-size:18px;
+  color: #757575;
+}
+
+.teacher-info {
+  background-color: white;
+}
+.teacher-info .teacher-img img {
+  display: block;
+  width: 100%;
+}
+
+.teacher-info .teacher-content{
+  padding: 20px 30px;
+}
+.teacher-content h3 {
+  color:#454545;
+  font-size: 20px;
+}
+.teacher-info .social-icon {
+  height: 55px;
+  border-top: 1px solid #f0f0f0;
+  padding: 4px 20px 0 20px;
+}
+
+.teacher-info .social-icon li {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.teacher-info .social-icon li a {
+  display: block;
+  font-size: 15px;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  margin: 5px 5px 5px 0;
+  color: #252020;
+}
+
+.teacher-info .social-icon li a :hover{
+  color: #81b29a;
+}
+
+
+/* --- Courses Section--- */
+
+ #courses {
+  background-color: #FAF9F9; 
+} 
+
+#courses .container .course-title {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+#courses .course-box,
+#reviews .review-box {
+  width: 100%;
+  padding: 0 15px; 
+}
+
+
+.course-title span {
+  display: block;
+  color: #909090;
+}
+
+ #courses .course-items{  
+  width: 100%; 
+ } 
+
+.course-items .item {
+  overflow: hidden;
+  background-color: white;
+}
+
+.item .course-image {
+  width: 100%;
+}
+
+.item .course-image img{
+  display: block;
+  /* change values smoothly */
+  transition: 0.5s;
+}
+
+.item .course-image img:hover{
+  transform: scale(1.1);
+}
+
+.item .course-detail {
+  padding: 30px 25px 15px 25px;
+}
+
+.item .course-detail h3 {
+  font-size: 1.5em;
+}
+
+.item .course-detail h3 a{
+  color: #454545;
+}
+.item .course-detail h3 a:hover{
+  color: #6c79a4;
+}
+
+.course-info {
+  border-top: 1px solid #f0f0f0;
+  position: relative;
+  clear: both;
+  padding: 10px 25px;
+}
+
+.course-info .course-price {
+  float: right;
+  margin-top: 10px;
+}
+
+.course-author,
+.course-author span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333333;
+}
+
+
+.course-author img {
+  display: inline-block !important;
+  border-radius: 50px;
+  width: 50px !important;
+  height: 50px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.course-price span {
+  display: block;
+  background-color: #b99a78;
+  border-radius: 2px;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+
+/*--- Reviews Section ---*/
+#reviews {
+  background-color: #edf6fb;
+}
+
+#reviews .container .review-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.review-title span {
+  display: block;
+  color: #909090;
+}
+
+.review-item {
+  background: #ffffff;
+  margin-bottom: 25px;
+  padding: 4em 3em; 
+  text-align: left;
+}
+
+.student-img {
+  display: inline-block; 
+  height: 60px; 
+  vertical-align: middle;
+}
+
+.student-img img{ 
+  border-radius: 50px;
+  width: 60px !important;
+  height: 60px;
+  margin-right: 15px; 
+}
+
+.student-info {  
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.student-info h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 ;
+}
+
+.student-info span {
+  font-size: 14px;
+  color:#757575;
+  
+}
+
+.review-item p {
+  padding-top: 20px;
+  font-size: 16px;
+  color:#757575;
+  margin: 0 0 10px;
+}
+
+.rating{
+  color: #f2cc8f;
+}
+
+
+/*--- Contact Section---*/
+
+#contact {
+  background-color: #d7c8bd;
+}
+
+.contact-form {
+  padding:0 15px;
+}
+
+.contact-form .title {
+  width: 100%;
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+.contact-form .title span{
+  display: block;
+}
+
+.contact-form .form-control {
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 50px;
+  color: #555;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 0;
+  outline:none ;
+  box-shadow: none;
+  margin: 10px 0;
+}
+
+.contact-form select {
+  line-height: 1.5 !important;
+}
+
+.contact-form  textarea{
+  height: 130px !important;
+} 
+
+
+.contact-form input[type='submit'] {
+  margin-top: 30px;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  line-height: 20px;
+}
+
+.contact-form input[type='submit']:hover {
+  border-color: #ffffff;
+  color: #ffffff; 
+  background-color: #b99a78;
+}
+
+.contact-pic img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+
+/*--- Footer section---*/
+
+.footer {
+  background-color: #3d405b;
+  padding: 100px 0;
+}
+
+.footer .container-box h2{
+  font-size:20px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.footer .container-box p{
+  font-size:14px;
+  margin-bottom: 20px;
+  line-height: 24px;
+  color:#909090;
+}
+
+.footer i {
+  color: #81b29a;
+}
+
+.footer .container .container-box a{
+  display: block;
+  margin-top: 5px;
+}
+
+.footer .social-icon {
+  position: relative;
+  margin: 25px 0 0;
+  padding: 0;
+}
+
+.footer .social-icon li {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.footer .social-icon li a {
+  font-size: 14px;
+  width: 35px;
+  height: 35px;
+  margin: 5px 5px 5px 0;
+  text-align: center;
+}
+
+.footer .social-icon li a :hover{
+  color: #fff;
+}
+
+.copyright p {
+  margin-bottom: 5px !important;
+}
+
+.copyright p:last-child {
+  margin-bottom: 20px !important;
+}
+
+.quick-links{
+  margin-top:35px;
+}
+
+.quick-links ul{
+  height:60px;
+  padding-left: 0;
+}
+
+.quick-links ul li{
+  display: inline-block;
+  margin: 5px 20px 5px 0;
+}
+
+.footer .container-box a{
+  display: block;
+  color:#909090 ;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.footer .container-box a:hover{
+  color: #fff;
+}
+
+.form-group .form-control {
+  display: block;
+  border: 0;
+  border-bottom: 1px solid #303030;
+  height: 50px;
+  margin: 5px 0;
+  outline: none;
+  width: 80%;
+}
+
+.form-group .submit {
+  display: block;
+  background: transparent;
+  border: 1px solid #f9f9f9;
+  border-radius: 50px;
+  color: #fff;
+  margin-top: 20px;
+  outline: none;
+  width: 50%;
+  cursor: pointer;
+}
+
+.form-group .submit:hover {
+  background-color: #b99a78;
+  border-color: transparent;
+}
+
+.form-group span {
+  color: #909090;
+  display: block;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+ /*--- scroll to top button ---*/
+
+.btn {
+  display: block;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color:lightgrey;
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);  
+}
+
+.btn i {
+  color: white;
+}
+
+.btn:hover{
+  background-color: #fff;
+}
+
+.btn:hover i{
+  color: black;
+}
+
+
+/*--- Responsive Style ---*/
+
+@media (max-width: 991px){
+  #feature h3 {
+    font-size: 16px;
+  }
+
+  #feature p {
+    font-size: 14px
+  }
+
+  #about .about-info {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  #about .about-info h3 {
+    text-align: left;
+  }
+
+  #about .about-info p {
+    text-align: left;
+  }
+
+  #about .entry-form {
+    margin: 0 auto;
+  }
+
+  #teachers .teacher-info {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+
+  #courses .item {
+    width: 70%;
+    margin: auto;
+  }
+
+  #reviews .review-item {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  #contact .contact-pic {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 768px){
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+  
+  h3 {
+    font-size: 1.3em;
+  }
+
+  #home .tab-pane {
+    padding-top: 40px;
+  }
+
+  #top a {
+    font-size:14px !important;
+  }
+
+  #menu .logo {
+    display: none;
+  }
+
+  #feature h3 {
+    font-size: 14px;
+  }
+
+  #feature p {
+    font-size: 12px;
+  }
+  
+  #menu .container ul li a{
+    height: 40px;
+    line-height: 40px;
+    color: #353535;
+  }
+
+  #contact .contact-pic {
+    text-align: center;
+  } 
+}
+
+
+@media (max-width: 610px){
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+  h3 {
+    font-size: 1.2em;
+  } 
+
+  #feature .col-12 {
+    margin-bottom: 10px;
+  }
+
+  #feature {
+    padding-bottom: 0;
+  }
+
+  #about .entry-form {
+    border-radius: 0 ;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+
+  #feature .feature-box {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #feature .nav-tabs .nav-link {
+    margin: 0 auto;
+    width: 70%;
+  } 
+
+  #teachers .teacher-info {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+
+

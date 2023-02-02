@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Html document for the project web page
+    Developed by: Yeming Hu
+    Script Date: January 28,2023-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- website description -->
+    <meta
+      name="description"
+      content="This is a professional online training center, the website contains many online courses for you to learn."
+    />
+    <!-- keywords -->
+    <meta
+      name="keywords"
+      content="Online Training, Online Learning, Web Courses"
+    />
+    <!-- title -->
+    <title>Online Training Center</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/e6753abcc3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body id="top">
+    <!-- start header section -->
+    <header id="menu">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-md bg-light fixed-top">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="collapsibleNavbar"
+          >
+            <!-- logo -->
+            <a class="navbar-brand" href="#">
+              <img src="images/logo.png" alt="Bootstrap" class="logo" />
+            </a>
+
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#teachers">Teachers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#courses">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#reviews">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- end header section -->
+
+    <!-- start home section -->
+    <section id="home">
+      <div class="container">
+        <div class="tab-content" id="nav-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="nav-course"
+            role="tabpanel"
+            aria-labelledby="nav-course-tab"
+          >
+            <img src="images/online-courses.jpg" class="img-fluid" alt="" />
+            <div class="content">
+              <h1>Discover the benefits of online learning</h1>
+              <span
+                >Online learning improves on traditional teaching methods.</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="tab-pane fade show"
+            id="nav-teacher"
+            role="tabpanel"
+            aria-labelledby="nav-teacher-tab"
+          >
+            <img src="images/teacher.jpg" class="img-fluid" alt="" />
+
+            <div class="content">
+              <h1>We will help you to learn</h1>
+              <span>Professional teachers give you the best education.</span>
+            </div>
+          </div>
+
+          <div
+            class="tab-pane fade show"
+            id="nav-certificate"
+            role="tabpanel"
+            aria-labelledby="nav-certificate-tab"
+          >
+            <img src="images/certificate.jpg" class="img-fluid" alt="" />
+
+            <div class="content">
+              <h1>Certificate of Achievement</h1>
+              <span>Get evidence of what you've learned.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end home section -->
+
+    <!-- start feature section-->
+    <section id="feature">
+      <div class="container">
+        <div class="row">
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <div class="feature-box col-md-4 col-sm-4">
+                <button
+                  class="nav-link active"
+                  id="nav-course-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-course"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-course"
+                  aria-selected="true"
+                >
+                  <h3>Learn Online</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolores quaerat autem
+                  </p>
+                </button>
+              </div>
+
+              <div class="feature-box col-md-4 col-sm-4">
+                <button
+                  class="nav-link"
+                  id="nav-teacher-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-teacher"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-teacher"
+                  aria-selected="false"
+                >
+                  <h3>Expert Teachers</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolores quaerat autem
+                  </p>
+                </button>
+              </div>
+
+              <div class="feature-box col-md-4 col-sm-4">
+                <button
+                  class="nav-link"
+                  id="nav-certificate-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-certificate"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-certificate"
+                  aria-selected="false"
+                >
+                  <h3>Professional Certificate</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolores quaerat autem
+                  </p>
+                </button>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <!-- end feature section -->
+
+    <!-- start about section-->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="about-info">
+              <h2>ABOUT US</h2>
+              <figure>
+                <span><i class="fa-solid fa-laptop"></i></span>
+                <figcaption>
+                  <h3>Online Learning</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Sint ipsa voluptatibus.
+                  </p>
+                </figcaption>
+              </figure>
+              <figure>
+                <span><i class="fa-solid fa-users"></i></span>
+                <figcaption>
+                  <h3>Expert Teachers</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Sint ipsa voluptatibus.
+                  </p>
+                </figcaption>
+              </figure>
+              <figure>
+                <span><i class="fa fa-certificate"></i></span>
+                <figcaption>
+                  <h3>Professional Certificate</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Sint ipsa voluptatibus.
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="form-box offset-lg-1 col-lg-5">
+            <div class="entry-form">
+              <form action="#" method="post">
+                <h2>Signup today</h2>
+                <input
+                  type="text"
+                  name="full name"
+                  class="form-control"
+                  placeholder="Full name"
+                  required
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Your email address"
+                  required
+                />
+
+                <input
+                  type="password"
+                  name="password"
+                  class="form-control"
+                  placeholder="Your password"
+                  required
+                />
+
+                <button class="submit-btn form-control" id="form-submit">
+                  Get started
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end about section-->
+
+    <!-- start teachers section -->
+    <section id="teachers">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="teacher-title">
+              <h2>Teachers <span>Meet Professional Trainers</span></h2>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="teacher-info">
+              <div class="teacher-img">
+                <img src="images/team1.jpg" class="img-responsive" alt="" />
+              </div>
+              <div class="teacher-content">
+                <h3>John Smith</h3>
+                <span>I love Teaching</span>
+              </div>
+              <ul class="social-icon">
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="teacher-info">
+              <div class="teacher-img">
+                <img src="images/team2.jpg" class="img-responsive" alt="" />
+              </div>
+              <div class="teacher-content">
+                <h3>Jenny</h3>
+                <span>Education is the key!</span>
+              </div>
+              <ul class="social-icon">
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="teacher-info">
+              <div class="teacher-img">
+                <img src="images/team3.jpg" class="img-responsive" alt="" />
+              </div>
+              <div class="teacher-content">
+                <h3>Jessica</h3>
+                <span>I like Online Courses</span>
+              </div>
+              <ul class="social-icon">
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="teacher-info">
+              <div class="teacher-img">
+                <img src="images/team4.jpg" class="img-responsive" alt="" />
+              </div>
+              <div class="teacher-content">
+                <h3>Mark Wilson</h3>
+                <span>I love Teaching</span>
+              </div>
+              <ul class="social-icon">
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end teachers section -->
+
+    <!-- start courses section-->
+    <section id="courses">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="course-title">
+              <h2>Popular Courses</h2>
+              <span>Upgrade your skills with newest courses</span>
+            </div>
+          </div>
+          <div class="owl-carousel owl-theme course-items">
+            <div class="course-box col-md-4">
+              <div class="item">
+                <div class="course-image">
+                  <img src="images/course1.jpg" alt="" />
+                </div>
+                <div class="course-detail">
+                  <h3><a href="#">Website Design</a></h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+                <div class="course-info">
+                  <div class="course-author">
+                    <img src="images/team2.jpg" class="img-responsive" alt="" />
+                    <span>Jenny</span>
+                  </div>
+                  <div class="course-price">
+                    <a href="#"><span>$120</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="course-box col-md-4">
+              <div class="item">
+                <div class="course-image">
+                  <img src="images/course2.jpg" alt="" />
+                </div>
+                <div class="course-detail">
+                  <h3><a href="#">Java Programming</a></h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+                <div class="course-info">
+                  <div class="course-author">
+                    <img src="images/team4.jpg" class="img-responsive" alt="" />
+                    <span>Mark Wilson</span>
+                  </div>
+                  <div class="course-price">
+                    <a href="#"><span>$130</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="course-box col-md-4">
+              <div class="item">
+                <div class="course-image">
+                  <img src="images/course3.jpg" alt="" />
+                </div>
+                <div class="course-detail">
+                  <h3><a href="#">Python Pragramming</a></h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+                <div class="course-info">
+                  <div class="course-author">
+                    <img src="images/team1.jpg" class="img-responsive" alt="" />
+                    <span>John Smith</span>
+                  </div>
+                  <div class="course-price">
+                    <a href="#"><span>$130</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="course-box col-md-4">
+              <div class="item">
+                <div class="course-image">
+                  <img src="images/course4.jpg" alt="" />
+                </div>
+                <div class="course-detail">
+                  <h3><a href="#">C# Programming</a></h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+                <div class="course-info">
+                  <div class="course-author">
+                    <img src="images/team3.jpg" class="img-responsive" alt="" />
+                    <span>Jessica</span>
+                  </div>
+                  <div class="course-price">
+                    <a href="#"><span>$120</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="course-box col-md-4">
+              <div class="item">
+                <div class="course-image">
+                  <img src="images/course5.jpg" alt="" />
+                </div>
+                <div class="course-detail">
+                  <h3><a href="#">DataBase</a></h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+                <div class="course-info">
+                  <div class="course-author">
+                    <img src="images/team1.jpg" class="img-responsive" alt="" />
+                    <span>John Smith</span>
+                  </div>
+                  <div class="course-price">
+                    <a href="#"><span>$110</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end courses section-->
+
+    <!-- start reviews section-->
+    <section id="reviews">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="review-title">
+              <h2>Student Reviews</h2>
+              <span>from around the world</span>
+            </div>
+          </div>
+
+          <div class="owl-carousel owl-theme review-items">
+            <div class="review-box col-md-4">
+              <div class="review-item">
+                <div class="student-img">
+                  <img src="images/tst-image1.jpg" alt="" />
+                </div>
+                <div class="student-info">
+                  <h4>Jack</h4>
+                  <span>Java Developer</span>
+                </div>
+                <p>
+                  Trying something new is exciting! Thanks for the amazing Java
+                  course and the great teacher who was able to make it
+                  interesting.
+                </p>
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-box col-md-4">
+              <div class="review-item">
+                <div class="student-img">
+                  <img src="images/tst-image2.jpg" alt="" />
+                </div>
+                <div class="student-info">
+                  <h4>Helen</h4>
+                  <span>Website Designer</span>
+                </div>
+                <p>
+                  You really do help young creative minds to get quality
+                  education and professional job search assistance. I'd
+                  recommend it to everyone!
+                </p>
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-box col-md-4">
+              <div class="review-item">
+                <div class="student-img">
+                  <img src="images/tst-image3.jpg" alt="" />
+                </div>
+                <div class="student-info">
+                  <h4>Amy</h4>
+                  <span>Art Designer</span>
+                </div>
+                <p>
+                  Donec erat libero, blandit vitae arcu eu, lacinia placerat
+                  justo. Sed sollicitudin quis felis vitae hendrerit.
+                </p>
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-box col-md-4">
+              <div class="review-item">
+                <div class="student-img">
+                  <img src="images/tst-image4.jpg" alt="" />
+                </div>
+                <div class="student-info">
+                  <h4>Barry</h4>
+                  <span>Programmer</span>
+                </div>
+                <p>
+                  Donec erat libero, blandit vitae arcu eu, lacinia placerat
+                  justo. Sed sollicitudin quis felis vitae hendrerit.
+                </p>
+                <div class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end reviews section-->
+
+    <!-- start contact section-->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="contact-form">
+              <form action="#" method="post">
+                <div class="title">
+                  <h2>
+                    Contact us
+                    <span>Feel free to ask anything. Let's chat!</span>
+                  </h2>
+                </div>
+                <div class="col-md-12">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter full name"
+                    name="name"
+                    required
+                  />
+
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Enter email address"
+                    name="email"
+                    required
+                  />
+
+                  <label for="subject">How did you know about us?</label>
+                  <select
+                    class="form-control"
+                    name="subject"
+                    id="subject"
+                    required
+                  >
+                    <option value="">Choose a subject</option>
+                    <option value="websearch">Website Searches</option>
+                    <option value="socialmedia">Social Media</option>
+                    <option value="others">Others</option>
+                  </select>
+
+                  <textarea
+                    class="form-control"
+                    rows="6"
+                    placeholder="Tell us about your message"
+                    name="message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="col-md-4">
+                  <input
+                    type="submit"
+                    class="form-control"
+                    name="send message"
+                    value="Send Message"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="contact-pic">
+              <img src="images/contact.jpg" class="img-responsive" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end contact section-->
+
+    <!-- start footer section -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <div class="container-box">
+              <h2>Headquarter</h2>
+              <p>
+                <i class="fa-solid fa-location-dot"></i>
+                &nbsp;1800 Green Street,<br />
+                Montreal QC, H4W 1H6
+              </p>
+              <ul class="social-icon">
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+              </ul>
+              <div class="copyright">
+                <p>Copyright &copy; 2023</p>
+                <p>Designed by Yeming Hu</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="container-box">
+              <h2>Contact Info</h2>
+              <p>
+                <i class="fa-solid fa-phone"></i>
+                &nbsp;438-888-8888, 438-999-9999<br />
+
+                <a href="mailto:hello@gmail.com"
+                  ><i class="fa-regular fa-envelope"></i>
+                  &nbsp;hello@gmail.com</a
+                >
+              </p>
+              <div class="quick-links">
+                <h2>Quick Links</h2>
+                <ul>
+                  <li><a href="#">Career</a></li>
+                  <li><a href="#">Investor</a></li>
+                  <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="container-box">
+              <h2>Newsletter Signup</h2>
+              <div class="form-group">
+                <form action="#" method="get">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Enter your email"
+                    name="email"
+                    id="email"
+                    required
+                  />
+                  <input
+                    type="submit"
+                    class="form-control submit"
+                    name="submit"
+                    id="submit"
+                    value="Send me"
+                  />
+                </form>
+                <span
+                  ><sup>*</sup> Please note - we do not spam your email.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer section -->
+
+    <!-- scroll to top button -->
+    <button class="btn">
+      <a href="#top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </button>
+
+    <!-- JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
